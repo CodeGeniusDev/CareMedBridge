@@ -1,26 +1,313 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================================
+   CareMedBridge — Design System
+   Editorial, quiet-confidence aesthetic. Solid colors only,
+   hairline borders, soft shadows, disciplined type scale.
+   ============================================================ */
+
+@theme {
+  /* ── Fonts ─────────────────────────────────────────────── */
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-inter-tight), var(--font-inter), system-ui, sans-serif;
+  --font-serif-accent: var(--font-newsreader), Georgia, serif;
+
+  /* ── Brand Palette ──────────────────────────────────────── */
+  --color-canvas:    #F7FAFC;   /* page background              */
+  --color-card:      #FFFFFF;   /* card / surface               */
+  --color-soft:      #EFF7F8;   /* soft section bg              */
+  --color-navy:      #0B1F33;   /* primary navy                 */
+  --color-navy-dark: #081627;   /* deeper navy for hovers       */
+  --color-teal:      #0E7490;   /* primary teal                 */
+  --color-teal-dark: #0A5E73;   /* teal hover                   */
+  --color-accent:    #14B8A6;   /* accent teal-green            */
+  --color-accent-dark: #0F9488; /* accent hover                 */
+  --color-text:      #17202A;   /* primary body text            */
+  --color-muted:     #64748B;   /* muted / secondary text       */
+  --color-border:    #E2E8F0;   /* borders / dividers           */
+
+  /* ── Radius ─────────────────────────────────────────────── */
+  --radius-card: 0.75rem;       /* 12px cards, panels           */
+  --radius-btn:  0.5rem;        /* 8px buttons, inputs          */
+  --radius-pill: 9999px;        /* pill / badge radius          */
+
+  /* ── Shadows (soft, neutral — no colored glows) ─────────── */
+  --shadow-card:  0 1px 2px 0 rgba(11, 31, 51, 0.04), 0 4px 16px -4px rgba(11, 31, 51, 0.06);
+  --shadow-card-hover: 0 2px 4px 0 rgba(11, 31, 51, 0.05), 0 12px 28px -8px rgba(11, 31, 51, 0.12);
+  --shadow-nav:   0 1px 0 0 rgba(11, 31, 51, 0.06);
+  --shadow-btn:   0 1px 2px 0 rgba(11, 31, 51, 0.14), 0 4px 12px -4px rgba(11, 31, 51, 0.18);
+  --shadow-lift:  0 2px 6px 0 rgba(11, 31, 51, 0.07), 0 16px 36px -12px rgba(11, 31, 51, 0.16);
+
+  /* ── Spacing extras ─────────────────────────────────────── */
+  --spacing-section: 5rem;      /* 80px standard section gap    */
+  --spacing-section-lg: 7rem;   /* 112px large section gap      */
+
+  /* ── Motion (strong curves — built-ins are too weak) ────── */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   400ms;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ============================================================
+   Base Reset
+   ============================================================ */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.65;
+    min-height: 100vh;
+  }
+
+  /* Display family for headings; confident, not oversized */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.12;
+    color: var(--color-navy);
+    letter-spacing: -0.022em;
+    text-wrap: balance;
+  }
+
+  h1 { font-size: clamp(2.125rem, 3.6vw, 2.875rem); line-height: 1.08; letter-spacing: -0.028em; }
+  h2 { font-size: clamp(1.625rem, 2.6vw, 2.125rem); line-height: 1.15; }
+  h3 { font-size: 1.1875rem; line-height: 1.3; letter-spacing: -0.015em; }
+
+  p {
+    color: var(--color-muted);
+    line-height: 1.7;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img, video, svg {
+    max-width: 100%;
+  }
+
+  img, video {
+    height: auto;
+    display: block;
+  }
+
+  input, textarea, select {
+    font-family: inherit;
+  }
+
+  ::selection {
+    background: rgba(14, 116, 144, 0.18);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 2px;
+    border-radius: 4px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ============================================================
+   Utilities
+   ============================================================ */
+@layer utilities {
+  /* Eyebrow label — small caps section marker.
+     :where() keeps specificity at zero so color utilities can override
+     the teal default on dark sections. */
+  :where(.eyebrow) {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-teal);
+  }
+
+  /* Editorial serif accent for one word in a headline */
+  :where(.accent-serif) {
+    font-family: var(--font-serif-accent);
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--color-teal);
+  }
+
+  /* Card base — zero-specificity so utility overrides (featured
+     borders, custom shadows) win the cascade. */
+  :where(.card-base) {
+    background: var(--color-card);
+    border-radius: var(--radius-card);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Section spacing */
+  .section-pad {
+    padding-top: var(--spacing-section);
+    padding-bottom: var(--spacing-section);
+  }
+
+  .section-pad-lg {
+    padding-top: var(--spacing-section-lg);
+    padding-bottom: var(--spacing-section-lg);
+  }
+
+  /* Entrance for JS-free state changes: form success states, filtered
+     list swaps. Gentle fade + 8px rise, 240ms strong ease-out. The
+     global reduced-motion block neutralizes the duration. */
+  .animate-fade-in {
+    animation: fade-in 240ms var(--ease-out) both;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px) scale(0.995);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  /* ── Buttons ──────────────────────────────────────────── */
+  /* :where() keeps base specificity at zero so layout/state utilities
+     (hidden, lg:inline-flex, w-full, …) can override the base block.
+     The base carries default (md) sizing so a bare `.btn` — no size
+     class — still renders with comfortable internal padding.
+     The variant blocks below are :where()-scoped for the same reason:
+     per-instance recolors on dark sections (CTASection passes
+     text-white/border-white/hover:bg-white) must win via utilities. */
+  :where(.btn) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1;
+    padding: 0.75rem 1.5rem;
+    min-height: 2.75rem;
+    border-radius: var(--radius-btn);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    transition:
+      background-color 180ms var(--ease-out),
+      border-color 180ms var(--ease-out),
+      color 180ms var(--ease-out),
+      box-shadow 180ms var(--ease-out),
+      transform 180ms var(--ease-out);
+  }
+
+  .btn-sm {
+    padding: 0.5rem 1.125rem;
+    min-height: 2.5rem;
+    font-size: 0.875rem;
+  }
+
+  .btn-md {
+    padding: 0.75rem 1.5rem;
+    min-height: 2.75rem;
+  }
+
+  .btn-lg {
+    padding: 0.875rem 1.75rem;
+    min-height: 3rem;
+    font-size: 1rem;
+  }
+
+  .btn:active {
+    transform: scale(0.98);
+  }
+
+  .btn:disabled,
+  .btn[aria-disabled="true"] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  :where(.btn-primary) {
+    background: var(--color-navy);
+    color: #fff;
+    box-shadow: var(--shadow-btn);
+  }
+  :where(.btn-primary:hover) {
+    background: var(--color-navy-dark);
+    box-shadow: var(--shadow-lift);
+  }
+
+  :where(.btn-secondary) {
+    background: var(--color-card);
+    color: var(--color-navy);
+    border: 1px solid var(--color-navy);
+  }
+  :where(.btn-secondary:hover) {
+    background: var(--color-soft);
+  }
+
+  :where(.btn-outline) {
+    background: transparent;
+    color: var(--color-navy);
+    border: 1px solid var(--color-border);
+  }
+  :where(.btn-outline:hover) {
+    border-color: var(--color-navy);
+  }
+
+  :where(.btn-ghost) {
+    background: transparent;
+    color: var(--color-navy);
+  }
+  :where(.btn-ghost:hover) {
+    background: var(--color-soft);
+  }
+
+}
+
+/* Hover-gated transforms: touch devices fire false hovers */
+@media (hover: hover) and (pointer: fine) {
+  .card-lift {
+    transition: box-shadow 220ms var(--ease-out), transform 220ms var(--ease-out), border-color 220ms var(--ease-out);
+  }
+  .card-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: #CBD5E1;
+  }
+}
+
+/* ============================================================
+   Reduced Motion — gentler, not zero
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-ping {
+    animation: none;
+  }
 }
