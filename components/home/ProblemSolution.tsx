@@ -6,7 +6,7 @@ import { Reveal } from "@/components/anim/Reveal";
 const pairs = [
   {
     problem: "Billing workload overwhelming your staff",
-    solution: "End-to-end billing operations handled for you — from charge capture to patient statements.",
+    solution: "End-to-end billing operations handled for you, from charge capture to patient statements.",
   },
   {
     problem: "Claims sitting in delays and backlog",
@@ -18,7 +18,7 @@ const pairs = [
   },
   {
     problem: "Aging AR piling up unresolved",
-    solution: "Prioritized, persistent follow-up on outstanding balances — oldest and highest first.",
+    solution: "Prioritized, persistent follow-up on outstanding balances, with the oldest and highest-dollar claims handled first.",
   },
   {
     problem: "Administrative burden pulling focus from care",
@@ -26,7 +26,7 @@ const pairs = [
   },
   {
     problem: "Revenue-cycle complexity across payers",
-    solution: "One accountable partner across the full RCM lifecycle — credentialing to reporting.",
+    solution: "One accountable partner across the full RCM lifecycle, from credentialing to reporting.",
   },
 ];
 

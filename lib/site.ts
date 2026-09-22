@@ -18,7 +18,7 @@ export const siteConfig = {
   phoneDisplay: "+1 (555) 000-0000",
   phoneHref: "+15550000000",
   addressLines: ["123 Medical Plaza, Suite 400", "New York, NY 10001"],
-  hours: "Mon – Fri: 9 AM – 6 PM EST",
+  hours: "Mon to Fri: 9 AM to 6 PM EST",
 } as const;
 
 export type SiteConfig = typeof siteConfig;

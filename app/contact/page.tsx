@@ -42,7 +42,7 @@ const contactDetails = [
   {
     icon: Clock,
     label: "Hours",
-    value: "Mon – Fri: 9 AM – 6 PM EST",
+    value: "Mon to Fri: 9 AM to 6 PM EST",
     href: undefined,
   },
 ];

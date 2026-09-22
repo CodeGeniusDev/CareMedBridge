@@ -190,7 +190,7 @@ export function ConsultationForm({
         });
       }
     } catch {
-      // Network/failure reaching the server — never leave the user hanging.
+      // Network/failure reaching the server; never leave the user hanging.
       setBanner({
         type: "error",
         message: "We could not reach our servers. Please check your connection and try again.",
@@ -213,7 +213,7 @@ export function ConsultationForm({
           <CheckCircle className="w-7 h-7 text-[var(--color-accent)]" />
         </span>
         <h3 className="text-xl font-bold text-[var(--color-navy)]">
-          Thank you — your request has been received.
+          Thank you. Your request has been received.
         </h3>
         <p className="text-[var(--color-muted)] max-w-sm leading-relaxed">
           Our team will review your information and get back to you. A billing
@@ -439,7 +439,7 @@ export function ConsultationForm({
         label="Message"
         name="message"
         error={errors.message}
-        hint="Optional — please do not include patient names, insurance IDs, or other protected health information."
+        hint="Optional. Please do not include patient names, insurance IDs, or other protected health information."
       >
         <textarea
           id="message"
@@ -472,7 +472,7 @@ export function ConsultationForm({
           <span>
             By submitting, you agree to be contacted about your request. We respect your
             privacy and never share your information. This form is for practice inquiries
-            only — please do not submit patient data.
+            only. Please do not submit patient data.
           </span>
         </p>
       </div>

@@ -21,7 +21,7 @@ export function ServicesShowcase() {
         <SectionHeading
           badge="What We Do"
           heading="Full-Spectrum Billing Services"
-          subheading="From eligibility verification to AR recovery, every service is designed to keep your revenue cycle moving — without adding to your team's workload."
+          subheading="From eligibility verification to AR recovery, every service is designed to keep your revenue cycle moving without adding to your team's workload."
           accentWord="Billing Services"
         />
 

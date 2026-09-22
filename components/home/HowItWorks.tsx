@@ -15,7 +15,7 @@ export function HowItWorks() {
         <SectionHeading
           badge="How It Works"
           heading="Your Revenue Cycle, Managed End to End"
-          subheading="A clear, disciplined workflow takes every claim from verification through payment — with denials and AR worked at every stage."
+          subheading="A clear, disciplined workflow takes every claim from verification through payment, with denials and AR worked at every stage."
           eyebrowClassName="text-[var(--color-accent)]"
           headingClassName="text-white"
           subheadingClassName="text-white/65"

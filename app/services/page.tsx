@@ -45,7 +45,7 @@ export default function ServicesPage() {
         badge="Our Services"
         heading="End-to-End Revenue Cycle Solutions"
         accentWord="Revenue Cycle"
-        subheading="From eligibility verification to AR recovery, CareMedBridge handles every aspect of your revenue cycle — so your practice gets paid faster and keeps more of what it earns."
+        subheading="From eligibility verification to AR recovery, CareMedBridge handles every aspect of your revenue cycle so your practice gets paid faster and keeps more of what it earns."
         ctas={[
           { label: "Request a Consultation", href: "/contact" },
           { label: "See How We Price", href: "/pricing", variant: "outline" },
@@ -59,7 +59,7 @@ export default function ServicesPage() {
             badge="Core Services"
             heading="The foundation of your revenue cycle"
             accentWord="foundation"
-            subheading="Most practices start here — the four services that carry the heaviest load in day-to-day billing."
+            subheading="Most practices start here with the four services that carry the heaviest load in day-to-day billing."
             className="mb-12"
           />
           <Stagger
@@ -80,7 +80,7 @@ export default function ServicesPage() {
             badge="Full Catalog"
             heading="Every service your practice needs"
             accentWord="service"
-            subheading="Twelve specialized services that work standalone — or as one connected revenue cycle."
+            subheading="Twelve specialized services that work either on their own or as one connected revenue cycle."
             className="mb-12"
           />
           <Stagger
@@ -130,7 +130,7 @@ export default function ServicesPage() {
                 What practices ask before outsourcing billing
               </h3>
               <p className="text-sm text-[var(--color-muted)] leading-relaxed flex-1">
-                Onboarding, turnaround, reporting, pricing models — straight answers in our FAQ.
+                Onboarding, turnaround, reporting, and pricing models, with straight answers in our FAQ.
               </p>
               <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-teal)] group-hover:gap-2.5 transition-[gap] duration-[var(--duration-fast)]">
                 Read the FAQ

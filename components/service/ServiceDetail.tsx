@@ -152,7 +152,7 @@ export function ServiceDetail({
             badge="Our Approach"
             heading="How CareMedBridge helps"
             accentWord="CareMedBridge"
-            subheading="A dedicated team, transparent process, and measurable outcomes — not a black box."
+            subheading="A dedicated team, transparent process, and measurable outcomes, not a black box."
             className="mb-12"
             eyebrowClassName="text-[var(--color-accent)]"
             headingClassName="text-white"
@@ -192,7 +192,7 @@ export function ServiceDetail({
             badge="Workflow"
             heading="How the process works"
             accentWord="process"
-            subheading="A clear, repeatable workflow — you always know what happens next and who owns it."
+            subheading="A clear, repeatable workflow, so you always know what happens next and who owns it."
             className="mb-14"
           />
           <ol className="relative max-w-3xl mx-auto flex flex-col gap-10">

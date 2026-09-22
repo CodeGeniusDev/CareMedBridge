@@ -39,7 +39,7 @@ const quoteFactors = [
     icon: Stethoscope,
     title: "Specialty",
     description:
-      "Coding complexity, modifier usage, and payer mix vary by specialty — a cardiology group's billing looks nothing like a therapy practice's.",
+      "Coding complexity, modifier usage, and payer mix vary by specialty, and a cardiology group's billing looks nothing like a therapy practice's.",
   },
   {
     icon: Building2,
@@ -51,7 +51,7 @@ const quoteFactors = [
     icon: ClipboardList,
     title: "Provider count",
     description:
-      "More providers means more claims, more credentialing, and more follow-up — your quote reflects the real workload.",
+      "More providers means more claims, more credentialing, and more follow-up, and your quote reflects the real workload.",
   },
   {
     icon: FileStack,
@@ -63,7 +63,7 @@ const quoteFactors = [
     icon: Workflow,
     title: "Services required",
     description:
-      "Full revenue cycle management, standalone denial management, credentialing only — you pay for what you actually use.",
+      "Full revenue cycle management, standalone denial management, and credentialing only; you pay for what you actually use.",
   },
   {
     icon: PieChart,
@@ -77,7 +77,7 @@ const pricingModels = [
   {
     name: "Percentage of collections",
     description:
-      "Our fee scales with what we actually collect for you — we're incentivized to maximize your revenue, not just process claims.",
+      "Our fee scales with what we actually collect for you, so we're incentivized to maximize your revenue, not just process claims.",
   },
   {
     name: "Flat fee",
@@ -155,7 +155,7 @@ export default function PricingPage() {
         badge="Pricing"
         heading="Pricing built around your practice"
         accentWord="your practice"
-        subheading="There's no honest one-size-fits-all rate for medical billing. Your quote is built from your specialty, practice size, provider count, billing volume, and the services you need — so you only pay for what moves your revenue."
+        subheading="There is no honest one-size-fits-all rate for medical billing. Your quote is built from your specialty, practice size, provider count, billing volume, and the services you need, so you only pay for what moves your revenue."
         ctas={[
           { label: "Request a Quote", href: "/contact" },
           { label: "Explore Services", href: "/services", variant: "outline" },
@@ -198,7 +198,7 @@ export default function PricingPage() {
             badge="Pricing Models"
             heading="Ways to structure the engagement"
             accentWord="structure"
-            subheading="Most practices fit one of three models — we'll recommend the one that aligns best with your volume and goals."
+            subheading="Most practices fit one of three models, and we'll recommend the one that aligns best with your volume and goals."
             className="mb-12"
           />
           <Stagger
@@ -224,7 +224,7 @@ export default function PricingPage() {
             badge="Engagement Tiers"
             heading="Scopes that scale with you"
             accentWord="scale"
-            subheading="Every tier is custom-quoted — the scope below shows what's typically included, not a fixed rate."
+            subheading="Every tier is custom-quoted, and the scope below shows what's typically included, not a fixed rate."
             className="mb-14"
           />
           <Stagger
@@ -310,13 +310,13 @@ export default function PricingPage() {
                 Pricing shaped to your <em className="accent-serif text-[var(--color-accent)]">practice</em>
               </h2>
               <p className="text-white/70 leading-relaxed max-w-md text-base md:text-lg">
-                Tell us about your specialty, provider count, and billing volume — we will
+                Tell us about your specialty, provider count, and billing volume, and we will
                 respond with a detailed, no-obligation quote built around your numbers.
               </p>
               <ul className="flex flex-col gap-3">
                 {[
                   "Response within one business day",
-                  "Transparent scope — no hidden fees",
+                  "Transparent scope with no hidden fees",
                   "Built around your specialty and volume",
                 ].map((point) => (
                   <li key={point} className="flex items-center gap-3 text-sm text-white/80">

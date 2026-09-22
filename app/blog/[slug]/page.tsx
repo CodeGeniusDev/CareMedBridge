@@ -179,7 +179,7 @@ export default async function BlogArticlePage({
 
       <CTASection
         heading="Want billing insights like this in your inbox?"
-        subheading="Subscribe-ready content, practical revenue cycle guidance — and a team behind it that practices can hire. Let's talk about your billing."
+        subheading="Subscribe-ready content, practical revenue cycle guidance, and a team practices can hire when they are ready. Let's talk about your billing."
         primaryCta={{ label: "Request a Consultation", href: "/contact" }}
         secondaryCta={{ label: "Explore Services", href: "/services" }}
       />

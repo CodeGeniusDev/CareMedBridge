@@ -55,7 +55,7 @@ export default function FAQPage() {
         badge="FAQ"
         heading="Answers, before you even ask"
         accentWord="Answers"
-        subheading="Everything practices want to know before partnering with a medical billing company — from onboarding and turnaround to reporting and pricing."
+        subheading="Everything practices want to know before partnering with a medical billing company, from onboarding and turnaround to reporting and pricing."
         ctas={[
           { label: "Ask a Question", href: "/contact" },
           { label: "Request a Quote", href: "/pricing", variant: "outline" },
@@ -98,7 +98,7 @@ export default function FAQPage() {
 
       <CTASection
         heading="Still Have Questions?"
-        subheading="Our billing specialists are happy to answer anything about our services, process, or pricing. Reach out — no obligation."
+        subheading="Our billing specialists are happy to answer anything about our services, process, or pricing. Reach out and we will talk through options with no obligation."
         primaryCta={{ label: "Contact Us", href: "/contact" }}
         secondaryCta={{ label: "View Services", href: "/services" }}
       />

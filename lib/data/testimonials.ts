@@ -10,7 +10,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "placeholder-1",
     quote:
-      "Sample placeholder — outsourcing our billing lifted a huge administrative weight off the front office. Claims go out cleaner and follow-up actually happens.",
+      "Sample placeholder: outsourcing our billing lifted a huge administrative weight off the front office. Claims go out cleaner and follow-up actually happens.",
     author: "Placeholder Practice Manager",
     role: "Multi-Specialty Group",
     practice: "Sample content",
@@ -18,7 +18,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "placeholder-2",
     quote:
-      "Sample placeholder — the team communicates clearly every month. We finally understand exactly where our revenue stands without chasing reports.",
+      "Sample placeholder: the team communicates clearly every month. We finally understand exactly where our revenue stands without chasing reports.",
     author: "Placeholder Physician",
     role: "Family Medicine",
     practice: "Sample content",
@@ -26,7 +26,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "placeholder-3",
     quote:
-      "Sample placeholder — denials that used to sit untouched for months now get analyzed and appealed quickly. The workflow feels organized end to end.",
+      "Sample placeholder: denials that used to sit untouched for months now get analyzed and appealed quickly. The workflow feels organized end to end.",
     author: "Placeholder Office Administrator",
     role: "Specialty Clinic",
     practice: "Sample content",

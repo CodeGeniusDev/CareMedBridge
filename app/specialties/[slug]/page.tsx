@@ -131,7 +131,7 @@ export default async function SpecialtyPage({
       />
       <CTASection
         heading={`Ready to improve your ${specialty.title.toLowerCase()} billing?`}
-        subheading={`Partner with a team that understands ${specialty.title.toLowerCase()} coding, modifiers, and payer rules — and keeps your revenue cycle moving.`}
+        subheading={`Partner with a team that understands ${specialty.title.toLowerCase()} coding, modifiers, and payer rules and keeps your revenue cycle moving.`}
       />
     </>
   );

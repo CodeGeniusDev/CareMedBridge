@@ -131,7 +131,7 @@ export default async function ServicePage({
       <ServiceDetail service={service} relatedServices={relatedServices} />
       <CTASection
         heading={`Ready to strengthen your ${service.title.toLowerCase()}?`}
-        subheading="Talk with our team about how this service fits your practice — and what it would look like in your revenue cycle."
+        subheading="Talk with our team about how this service fits your practice and what it would look like in your revenue cycle."
         primaryCta={{
           label: "Request a Consultation",
           href: `/contact?service=${service.slug}`,

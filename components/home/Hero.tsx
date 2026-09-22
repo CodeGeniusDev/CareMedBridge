@@ -42,7 +42,7 @@ function DashboardMock() {
 
   const remits = [
     { payer: "Commercial Payer", tag: "Paid", tone: "teal" as const },
-    { payer: "Medicare", tag: "In Review", tone: "navy" as const },
+    { payer: "Medicare", tag: "Verified", tone: "navy" as const },
     { payer: "Denied Claim", tag: "Appealed", tone: "amber" as const },
   ];
 
@@ -168,7 +168,7 @@ export function Hero() {
             </h1>
             <p className="max-w-xl text-base leading-relaxed md:text-lg">
               CareMedBridge helps healthcare providers simplify billing, manage claims, improve
-              revenue-cycle operations, and reduce administrative workload — so you can focus on
+              revenue-cycle operations, and reduce administrative workload so you can focus on
               patient care.
             </p>
             <div className="flex flex-col gap-3 pt-1 sm:flex-row">

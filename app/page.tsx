@@ -51,7 +51,7 @@ export default function HomePage() {
       {/* 10. Final CTA */}
       <CTASection
         heading="Ready to Simplify Your Healthcare Billing?"
-        subheading="Talk to a CareMedBridge specialist today. We'll review your current billing setup and show you exactly how we can help — no obligation."
+        subheading="Talk to a CareMedBridge specialist today. We'll review your current billing setup and show you exactly how we can help, with no obligation."
         primaryCta={{ label: "Request a Consultation", href: "/contact" }}
         secondaryCta={{ label: "View Our Services", href: "/services" }}
       />

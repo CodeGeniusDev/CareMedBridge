@@ -49,7 +49,7 @@ export default function BlogPage() {
         badge="Resources"
         heading="Healthcare Billing Insights"
         accentWord="Insights"
-        subheading="Practical guidance on medical billing, coding, revenue cycle management, and practice operations — written for providers, not payers."
+        subheading="Practical guidance on medical billing, coding, revenue cycle management, and practice operations written for providers, not payers."
       />
 
       {/* Featured article */}
@@ -145,7 +145,7 @@ export default function BlogPage() {
 
       <CTASection
         heading="Prefer to Hand Billing Off Entirely?"
-        subheading="Reading about billing is one thing — never thinking about it again is better. Let's talk about what CareMedBridge can take off your plate."
+        subheading="Reading about billing is one thing. Never thinking about it again is better. Let's talk about what CareMedBridge can take off your plate."
         primaryCta={{ label: "Request a Consultation", href: "/contact" }}
         secondaryCta={{ label: "View Our Services", href: "/services" }}
       />

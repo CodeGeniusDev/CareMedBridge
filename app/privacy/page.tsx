@@ -28,7 +28,7 @@ const sections = [
   },
   {
     heading: "Please do not submit patient information",
-    body: "This website is intended for practice administrators and providers to discuss billing services — it is not a channel for patient data. Please do not include patient names, dates of birth, insurance member IDs, medical record numbers, or any other protected health information (PHI) in form submissions, emails, or phone messages.",
+    body: "This website is intended for practice administrators and providers to discuss billing services. It is not a channel for patient data. Please do not include patient names, dates of birth, insurance member IDs, medical record numbers, or any other protected health information (PHI) in form submissions, emails, or phone messages.",
   },
   {
     heading: "Your choices",

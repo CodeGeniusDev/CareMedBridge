@@ -21,7 +21,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = pageMetadata({
   title: "About Us",
   description:
-    "Learn about CareMedBridge — a USA-focused healthcare billing and revenue cycle management company helping physicians, practices, and clinics maximize revenue with transparent, specialty-aware billing services.",
+    "Learn about CareMedBridge, a USA-focused healthcare billing and revenue cycle management company helping physicians, practices, and clinics maximize revenue with transparent, specialty-aware billing services.",
   path: "/about",
   keywords: [
     "medical billing company",
@@ -76,7 +76,7 @@ const outsourceReasons = [
     icon: TrendingUp,
     title: "Healthier cash flow",
     description:
-      "Faster, cleaner claims and disciplined follow-up shorten the payment cycle — practices typically collect more of what they earn, sooner.",
+      "Faster, cleaner claims and disciplined follow-up shorten the payment cycle, and practices typically collect more of what they earn sooner.",
   },
   {
     icon: Users,
@@ -121,8 +121,8 @@ export default function AboutPage() {
               <h2>Our Mission</h2>
               <p className="text-base">
                 To give every practice we serve a billing operation that is accurate,
-                transparent, and accountable — one that treats your revenue with the same
-                care you give your patients, and proves it with clear reporting.
+                transparent, and accountable, and one that treats your revenue with the same
+                care you give your patients while proving it with clear reporting.
               </p>
             </div>
             <div className="card-base card-lift p-7 md:p-8 flex flex-col gap-4">
@@ -132,7 +132,7 @@ export default function AboutPage() {
               <h2>Our Vision</h2>
               <p className="text-base">
                 A healthcare system where no practice loses revenue to preventable billing
-                errors — where providers of every size can compete on care, not on
+                errors, and where providers of every size can compete on care instead of
                 back-office capacity.
               </p>
             </div>
@@ -153,8 +153,8 @@ export default function AboutPage() {
             <div className="flex flex-col gap-6 text-[var(--color-muted)] text-base md:text-lg leading-relaxed">
               <p>
                 CareMedBridge was created to serve the evolving needs of modern healthcare
-                providers. We work with practices of all sizes — from solo physicians to
-                multi-specialty groups — delivering revenue cycle solutions tailored to each
+                providers. We work with practices of all sizes, from solo physicians to
+                multi-specialty groups, delivering revenue cycle solutions tailored to each
                 practice&apos;s workflow, specialty, and growth plans.
               </p>
               <p>
@@ -210,7 +210,7 @@ export default function AboutPage() {
             badge="Why Outsource"
             heading="Why practices choose outsourced billing"
             accentWord="outsourced"
-            subheading="The shift to medical billing outsourcing isn't about giving up control — it's about gaining capability."
+            subheading="The shift to medical billing outsourcing is not about giving up control. It is about gaining capability."
             className="mb-12"
             eyebrowClassName="text-[var(--color-accent)]"
             headingClassName="text-white"

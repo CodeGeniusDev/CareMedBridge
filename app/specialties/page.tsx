@@ -12,7 +12,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = pageMetadata({
   title: "Medical Billing by Specialty",
   description:
-    "CareMedBridge provides specialized medical billing and revenue cycle management for 18 medical specialties — including cardiology, orthopedics, pediatrics, neurology, mental health, physical therapy, and primary care — for practices across the USA.",
+    "CareMedBridge provides specialized medical billing and revenue cycle management for 18 medical specialties, including cardiology, orthopedics, pediatrics, neurology, mental health, physical therapy, and primary care, for practices across the USA.",
   path: "/specialties",
   keywords: [
     "medical billing services for physicians",

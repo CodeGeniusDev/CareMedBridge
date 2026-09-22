@@ -15,7 +15,7 @@ const pillars = [
     icon: ClipboardList,
     title: "Reduce administrative workload",
     description:
-      "We take day-to-day billing tasks off your team's plate — from data entry and verification to follow-ups and statements.",
+      "We take day-to-day billing tasks off your team's plate, from data entry and verification to follow-ups and statements.",
   },
   {
     icon: Workflow,
@@ -33,7 +33,7 @@ const pillars = [
     icon: HeartPulse,
     title: "Help practices focus on patients",
     description:
-      "Less time on paperwork means more time for what matters most — your patients and your practice.",
+      "Less time on paperwork means more time for what matters most: your patients and your practice.",
   },
   {
     icon: MessageSquareText,
@@ -61,7 +61,7 @@ export function WhyCareMedBridge() {
                 <em className="accent-serif">your team</em>
               </h2>
               <p className="max-w-md text-base leading-relaxed md:text-lg">
-                We don&apos;t just process claims — we take ownership of your revenue cycle
+                We don&apos;t just process claims; we take ownership of your revenue cycle
                 operations, so your staff can breathe and your practice can grow.
               </p>
               <div className="flex flex-col gap-3 pt-2 sm:flex-row">

@@ -16,7 +16,7 @@ export const metadata: Metadata = pageMetadata({
 const sections = [
   {
     heading: "Use of this website",
-    body: "This website provides general information about CareMedBridge's healthcare billing services and a way to request a consultation or quote. Using this site does not create a billing or professional services agreement — engagements begin only after a written agreement is signed by both parties.",
+    body: "This website provides general information about CareMedBridge's healthcare billing services and a way to request a consultation or quote. Using this site does not create a billing or professional services agreement. Engagements begin only after a written agreement is signed by both parties.",
   },
   {
     heading: "Informational content",
@@ -24,7 +24,7 @@ const sections = [
   },
   {
     heading: "Intellectual property",
-    body: "All content on this website — text, design, branding, and graphics — belongs to CareMedBridge and may not be reproduced without written permission.",
+    body: "All content on this website, including text, design, branding, and graphics, belongs to CareMedBridge and may not be reproduced without written permission.",
   },
   {
     heading: "Form submissions",

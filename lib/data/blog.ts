@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
     slug: "top-denial-reasons-2024",
     title: "The Top Denial Reasons We See in Medical Billing (and How to Prevent Them)",
     excerpt:
-      "Most claim denials trace back to a short list of preventable causes. Here are the patterns denial management teams see most often — and the workflow fixes that stop them upstream.",
+      "Most claim denials trace back to a short list of preventable causes. Here are the patterns denial management teams see most often and the workflow fixes that stop them upstream.",
     category: "Denial Management",
     publishedAt: "2024-06-12",
     readTime: "6 min read",
@@ -33,7 +33,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "The single most common denial category involves insurance eligibility verification. Coverage that lapsed, a plan the front desk didn't verify, or benefits that changed since the last visit all lead to claims that payers reject before they even reach adjudication. Verifying coverage and benefits before the appointment — not after — removes most of this category entirely.",
+        text: "The single most common denial category involves insurance eligibility verification. Coverage that lapsed, a plan the front desk didn't verify, or benefits that changed since the last visit all lead to claims that payers reject before they even reach adjudication. Verifying coverage and benefits before the appointment, not after, removes most of this category entirely.",
       },
       {
         type: "heading",
@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Duplicate claims, incorrect patient demographics, and missed filing deadlines round out the usual suspects. These are process failures, not clinical ones — which means a disciplined workflow eliminates them.",
+        text: "Duplicate claims, incorrect patient demographics, and missed filing deadlines round out the usual suspects. These are process failures, not clinical ones, which means a disciplined workflow eliminates them.",
       },
       {
         type: "heading",
@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "A denial management service built on prevention — not just appeals — changes the economics of a practice's revenue cycle. If your denial rate has been flat for years, the cause is almost always upstream of the denial itself.",
+        text: "A denial management service built on prevention, not just appeals, changes the economics of a practice's revenue cycle. If your denial rate has been flat for years, the cause is almost always upstream of the denial itself.",
       },
     ],
   },
@@ -102,10 +102,10 @@ export const blogPosts: BlogPost[] = [
       {
         type: "list",
         items: [
-          "Incomplete applications — missing documents or inconsistent dates cause rejections and restarts.",
+          "Incomplete applications, with missing documents or inconsistent dates, cause rejections and restarts.",
           "CAQH profiles that are out of date or not attested.",
           "Payer backlogs, which are outside your control but manageable with early submission.",
-          "Delegating the task without an owner — credentialing stalls when no one is accountable for it.",
+          "Delegating the task without an owner, because credentialing stalls when no one is accountable for it.",
         ],
       },
       {
@@ -114,11 +114,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Start the process months before a provider's first scheduled patient. Assign a single owner, keep a checklist per payer, follow up on applications at regular intervals, and document every interaction. A medical credentialing service handles exactly this coordination — following up persistently is most of the job.",
+        text: "Start the process months before a provider's first scheduled patient. Assign a single owner, keep a checklist per payer, follow up on applications at regular intervals, and document every interaction. A medical credentialing service handles exactly this coordination, and persistent follow-up is most of the job.",
       },
       {
         type: "paragraph",
-        text: "Done well, credentialing becomes a repeatable onboarding system rather than a recurring emergency. Practices that treat it as a process — with timelines, owners, and checklists — consistently start new providers billing sooner.",
+        text: "Done well, credentialing becomes a repeatable onboarding system rather than a recurring emergency. Practices that treat it as a process, with timelines, owners, and checklists, consistently start new providers billing sooner.",
       },
     ],
   },
@@ -127,7 +127,7 @@ export const blogPosts: BlogPost[] = [
     slug: "rcm-kpis-every-practice",
     title: "The Revenue Cycle KPIs Every Practice Should Track",
     excerpt:
-      "Days in AR, denial rate, first-pass resolution — which revenue cycle metrics actually matter, what healthy looks like, and how to build a reporting rhythm around them.",
+      "Days in AR, denial rate, and first-pass resolution: which revenue cycle metrics actually matter, what healthy looks like, and how to build a reporting rhythm around them.",
     category: "Revenue Cycle",
     publishedAt: "2024-08-21",
     readTime: "8 min read",
@@ -144,7 +144,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Days in AR measures how long it takes, on average, to collect what you're owed. When the number climbs, money is getting stuck somewhere — often in unworked denials, slow follow-up, or payers sitting on claims. It's the single best pulse check on your revenue cycle.",
+        text: "Days in AR measures how long it takes, on average, to collect what you're owed. When the number climbs, money is getting stuck somewhere, often in unworked denials, slow follow-up, or payers sitting on claims. It's the single best pulse check on your revenue cycle.",
       },
       {
         type: "heading",
@@ -152,7 +152,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Your denial rate shows what percentage of claims come back unpaid on the first attempt, while first-pass resolution rate measures how often claims are paid without any rework. Together they reveal whether your front-end processes — eligibility, coding, authorization — are doing their job before submission.",
+        text: "Your denial rate shows what percentage of claims come back unpaid on the first attempt, while first-pass resolution rate measures how often claims are paid without any rework. Together they reveal whether your front-end processes, including eligibility, coding, and authorization, are doing their job before submission.",
       },
       {
         type: "heading",
@@ -172,12 +172,12 @@ export const blogPosts: BlogPost[] = [
           "Review a one-page KPI summary monthly, with the same metrics every time.",
           "Tie each metric to an owner and a target so trends trigger action.",
           "Investigate changes month over month instead of reacting to single data points.",
-          "Share results with providers and staff — visibility drives improvement.",
+          "Share results with providers and staff, because visibility drives improvement.",
         ],
       },
       {
         type: "paragraph",
-        text: "Revenue cycle management services should include this reporting by default. If your current reports are raw data dumps instead of clear metrics with context, you're doing the analysis work yourself — which is exactly the work you outsourced.",
+        text: "Revenue cycle management services should include this reporting by default. If your current reports are raw data dumps instead of clear metrics with context, you're doing the analysis work yourself, which is exactly the work you outsourced.",
       },
     ],
   },
@@ -195,7 +195,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: "paragraph",
-        text: "Prior authorization exists to control costs, but for practices it often means phone queues, faxed forms, and treatment delays. The difference between authorization chaos and a manageable process is almost always organization — knowing what needs auth, starting early, and tracking every request to completion.",
+        text: "Prior authorization exists to control costs, but for practices it often means phone queues, faxed forms, and treatment delays. The difference between authorization chaos and a manageable process is almost always organization: knowing what needs auth, starting early, and tracking every request to completion.",
       },
       {
         type: "heading",
@@ -203,7 +203,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Authorization requirements vary by payer, plan, and procedure. Practices that maintain a current matrix of which services require prior authorization — and under which plans — avoid the two worst outcomes: missing a required auth and chasing auth for services that don't need it.",
+        text: "Authorization requirements vary by payer, plan, and procedure. Practices that maintain a current matrix of which services require prior authorization and under which plans avoid the two worst outcomes: missing a required auth and chasing auth for services that don't need it.",
       },
       {
         type: "heading",
@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Prior authorization services take this entire workflow off your team's plate — payer portal management, documentation collection, status tracking, and appeals. For practices with heavy authorization volume, that's hours returned to clinical staff every week.",
+        text: "Prior authorization services take this entire workflow off your team's plate, from payer portal management and documentation collection to status tracking and appeals. For practices with heavy authorization volume, that's hours returned to clinical staff every week.",
       },
     ],
   },
@@ -237,7 +237,7 @@ export const blogPosts: BlogPost[] = [
     slug: "in-house-vs-outsourced-billing",
     title: "In-House vs. Outsourced Medical Billing: An Honest Comparison",
     excerpt:
-      "Should your practice bill in-house or outsource? A practical look at cost, control, expertise, and scalability — and the situations where each option makes sense.",
+      "Should your practice bill in-house or outsource? A practical look at cost, control, expertise, and scalability, and the situations where each option makes sense.",
     category: "Outsourcing",
     publishedAt: "2025-01-14",
     readTime: "7 min read",
@@ -254,7 +254,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "An in-house billing team means salaries, benefits, training, software licensing, and coverage for turnover and absences. It also means your practice carries the full risk of process gaps — when a biller leaves, their knowledge leaves with them unless you've documented everything.",
+        text: "An in-house billing team means salaries, benefits, training, software licensing, and coverage for turnover and absences. It also means your practice carries the full risk of process gaps, because when a biller leaves, their knowledge leaves with them unless you've documented everything.",
       },
       {
         type: "heading",
@@ -262,11 +262,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "A medical billing company spreads specialized expertise, payer knowledge, and process discipline across many practices. You gain a team that lives and breathes coding updates, denial trends, and payer behavior — without hiring or training that expertise yourself. Reporting and accountability shift to a partner whose business is billing performance.",
+        text: "A medical billing company spreads specialized expertise, payer knowledge, and process discipline across many practices. You gain a team that lives and breathes coding updates, denial trends, and payer behavior without hiring or training that expertise yourself. Reporting and accountability shift to a partner whose business is billing performance.",
       },
       {
         type: "heading",
-        text: "Where practices hesitate — and why it usually works out",
+        text: "Where practices hesitate, and why it usually works out",
       },
       {
         type: "list",
@@ -287,7 +287,7 @@ export const blogPosts: BlogPost[] = [
     slug: "small-practice-billing-tips",
     title: "Billing Tips for Small Practices: Getting Paid Faster on a Lean Team",
     excerpt:
-      "Small practices don't have a billing department — they have a person. Practical billing strategies that protect cash flow without adding headcount.",
+      "Small practices don't have a billing department; they have a person. Practical billing strategies that protect cash flow without adding headcount.",
     category: "Small Practices",
     publishedAt: "2025-02-10",
     readTime: "6 min read",
@@ -296,7 +296,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: "paragraph",
-        text: "In a small practice, billing usually falls on one person wearing several hats. The practices that thrive aren't the ones with more staff — they're the ones with tighter processes. These are the highest-leverage habits we see in well-run small practices.",
+        text: "In a small practice, billing usually falls on one person wearing several hats. The practices that thrive aren't the ones with more staff; they're the ones with tighter processes. These are the highest-leverage habits we see in well-run small practices.",
       },
       {
         type: "heading",
@@ -321,7 +321,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "list",
         items: [
-          "Set aside a fixed weekly block for follow-up on unpaid claims — and protect it.",
+          "Set aside a fixed weekly block for follow-up on unpaid claims and protect it.",
           "Start with the oldest balances; they depreciate fastest and many are near timely-filing limits.",
           "Track denial reasons in simple categories so you can fix the source, not the symptom.",
           "Send statements on a consistent schedule and follow up on patient balances by phone when needed.",
@@ -329,7 +329,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "When a lean team is still drowning, that's when a medical billing company for small practices earns its keep — handling the claims, denials, and follow-up so your one-person billing operation becomes a full team behind them. Explore our medical billing services or request a consultation to see what that would look like for your practice.",
+        text: "When a lean team is still drowning, that's when a medical billing company for small practices earns its keep, handling the claims, denials, and follow-up so your one-person billing operation becomes a full team behind them. Explore our medical billing services or request a consultation to see what that would look like for your practice.",
       },
     ],
   },

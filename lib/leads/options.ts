@@ -33,10 +33,10 @@ export const SPECIALTY_OPTIONS = [
 
 export const PROVIDER_COUNT_OPTIONS = [
   "1 provider",
-  "2–5 providers",
-  "6–10 providers",
-  "11–25 providers",
-  "26–50 providers",
+  "2 to 5 providers",
+  "6 to 10 providers",
+  "11 to 25 providers",
+  "26 to 50 providers",
   "50+ providers",
 ];
 
