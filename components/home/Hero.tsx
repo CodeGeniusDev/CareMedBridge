@@ -73,16 +73,16 @@ function DashboardMock() {
               <div
                 key={step.label}
                 className={`flex flex-col items-center gap-2 rounded-[var(--radius-btn)] border px-2 py-3 text-center ${step.state === "active"
-                    ? "border-[var(--color-teal)]/40 bg-white shadow-[var(--shadow-card)]"
-                    : "border-[var(--color-border)] bg-white"
+                  ? "border-[var(--color-teal)]/40 bg-white shadow-[var(--shadow-card)]"
+                  : "border-[var(--color-border)] bg-white"
                   }`}
               >
                 <span
                   className={`flex h-8 w-8 items-center justify-center rounded-full ${step.state === "done"
-                      ? "bg-[var(--color-accent)]/15 text-[var(--color-accent)]"
-                      : step.state === "active"
-                        ? "bg-[var(--color-teal)] text-white"
-                        : "bg-slate-100 text-[var(--color-muted)]"
+                    ? "bg-[var(--color-accent)]/15 text-[var(--color-accent)]"
+                    : step.state === "active"
+                      ? "bg-[var(--color-teal)] text-white"
+                      : "bg-slate-100 text-[var(--color-muted)]"
                     }`}
                 >
                   {step.state === "done" ? (
@@ -157,20 +157,18 @@ export function Hero() {
           <Stagger className="flex flex-col items-start gap-6" stagger={0.09} y={22}>
             <span className="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white px-3.5 py-1.5 text-xs font-medium text-[var(--color-muted)] shadow-[var(--shadow-card)]">
               <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-[var(--color-accent)]" />
-              healthcare billing services
+              revenue cycle management
             </span>
             <h1>
-              Healthcare billing services{" "}
-              <em className="accent-serif">built around your practice</em>
+              Reduce Revenue Loss from{" "}
+              <em className="accent-serif">Denials, Aging AR, and Billing Errors</em>
             </h1>
             <p className="max-w-xl text-base leading-relaxed md:text-lg">
-              CareMedBridge helps healthcare providers simplify billing, manage claims, improve
-              revenue-cycle operations, and reduce administrative workload so you can focus on
-              patient care.
+              CareMedBridge helps U.S. healthcare practices improve claims accuracy, reduce avoidable billing issues, manage aging AR, and build a clearer, more dependable revenue cycle.
             </p>
             <div className="flex flex-col gap-3 pt-1 sm:flex-row">
               <Link href="/contact" className="btn btn-primary btn-lg">
-                Request a Free Consultation
+                Request a Free RCM Assessment
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link href="/services" className="btn btn-secondary btn-lg">
@@ -178,7 +176,7 @@ export function Hero() {
               </Link>
             </div>
             <p className="text-sm">
-              HIPAA-conscious workflows · US-based billing team · Transparent reporting
+              Clear reporting · Denial follow-up · Claims management · Practice-focused support
             </p>
           </Stagger>
 

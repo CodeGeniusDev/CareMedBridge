@@ -12,9 +12,9 @@ import { FAQPreview } from "@/components/home/FAQPreview";
 import { CTASection } from "@/components/ui/CTASection";
 
 export const metadata: Metadata = pageMetadata({
-  title: "CareMedBridge | Healthcare Billing Services",
+  title: "CareMedBridge | RCM and Medical Billing for U.S. Practices",
   description:
-    "End-to-end medical billing, coding, and revenue cycle management for physicians and healthcare practices across the USA.",
+    "CareMedBridge helps U.S. healthcare practices reduce claim denials, manage aging AR, improve billing accuracy, and streamline revenue cycle operations.",
   path: "/",
 });
 
@@ -42,7 +42,7 @@ export default function HomePage() {
       {/* 7. Problem → Solution */}
       <ProblemSolution />
 
-      {/* 8. Testimonials (clearly-marked placeholders) */}
+      {/* 8. Operational improvement highlights */}
       <TestimonialsSection />
 
       {/* 9. FAQ preview */}
@@ -50,10 +50,10 @@ export default function HomePage() {
 
       {/* 10. Final CTA */}
       <CTASection
-        heading="Ready to Simplify Your Healthcare Billing?"
-        subheading="Talk to a CareMedBridge specialist today. We'll review your current billing setup and show you exactly how we can help, with no obligation."
-        primaryCta={{ label: "Request a Consultation", href: "/contact" }}
-        secondaryCta={{ label: "View Our Services", href: "/services" }}
+        heading="Get Your Free RCM Assessment"
+        subheading="Tell us about your practice and current billing challenges. We will review the revenue-cycle issues that are slowing collections and discuss a practical path forward."
+        primaryCta={{ label: "Request a Free RCM Assessment", href: "/contact" }}
+        secondaryCta={{ label: "Explore Our Services", href: "/services" }}
       />
 
       {/* 11. Footer is rendered globally in the root layout */}
