@@ -10,7 +10,8 @@ import type { FAQ } from "@/types";
 export const faqs: FAQ[] = [
   {
     id: "1",
-    question: "What types of healthcare providers does CareMedBridge work with?",
+    question:
+      "What types of healthcare providers does CareMedBridge work with?",
     answer:
       "We work with a wide range of providers including solo physicians, small and large group practices, multi-specialty groups, clinics, urgent care centers, and hospitals across the United States. Our team has experience across 18 medical specialties.",
     category: "General",
@@ -66,7 +67,8 @@ export const faqs: FAQ[] = [
   },
   {
     id: "9",
-    question: "What is outsourced medical billing, and why do practices use it?",
+    question:
+      "What is outsourced medical billing, and why do practices use it?",
     answer:
       "Outsourced medical billing means a specialized company like CareMedBridge handles your claims, coding, payments, and follow-up instead of an in-house team. Practices outsource to reduce overhead, access deeper billing expertise, speed up reimbursements, and free staff to focus on patient care rather than paperwork.",
     category: "Services",

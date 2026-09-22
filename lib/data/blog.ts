@@ -14,7 +14,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: "1",
     slug: "top-denial-reasons-2024",
-    title: "The Top Denial Reasons We See in Medical Billing (and How to Prevent Them)",
+    title:
+      "The Top Denial Reasons We See in Medical Billing (and How to Prevent Them)",
     excerpt:
       "Most claim denials trace back to a short list of preventable causes. Here are the patterns denial management teams see most often and the workflow fixes that stop them upstream.",
     category: "Denial Management",
@@ -74,7 +75,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: "2",
     slug: "credentialing-guide-2024",
-    title: "Provider Credentialing Explained: A Practical Guide for New Practices",
+    title:
+      "Provider Credentialing Explained: A Practical Guide for New Practices",
     excerpt:
       "Credentialing delays keep new providers from seeing patients and billing payers. This guide walks through the enrollment process, common bottlenecks, and how to avoid costly delays.",
     category: "Credentialing",
@@ -184,7 +186,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: "4",
     slug: "prior-authorization-tips",
-    title: "Prior Authorization Best Practices: Reducing Delays Without Slowing Care",
+    title:
+      "Prior Authorization Best Practices: Reducing Delays Without Slowing Care",
     excerpt:
       "Prior authorizations delay care and burden staff when handled reactively. Here's how organized practices turn PA into a managed, predictable workflow.",
     category: "Prior Authorization",
@@ -246,7 +249,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: "paragraph",
-        text: "Medical billing outsourcing is a big decision for any practice, and it's rarely as simple as \"cheaper\" or \"easier.\" The right answer depends on your practice's size, specialty, growth plans, and how much billing expertise you can realistically maintain in-house. Here's an honest look at both sides.",
+        text: 'Medical billing outsourcing is a big decision for any practice, and it\'s rarely as simple as "cheaper" or "easier." The right answer depends on your practice\'s size, specialty, growth plans, and how much billing expertise you can realistically maintain in-house. Here\'s an honest look at both sides.',
       },
       {
         type: "heading",
@@ -285,7 +288,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: "6",
     slug: "small-practice-billing-tips",
-    title: "Billing Tips for Small Practices: Getting Paid Faster on a Lean Team",
+    title:
+      "Billing Tips for Small Practices: Getting Paid Faster on a Lean Team",
     excerpt:
       "Small practices don't have a billing department; they have a person. Practical billing strategies that protect cash flow without adding headcount.",
     category: "Small Practices",

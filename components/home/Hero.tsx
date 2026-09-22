@@ -72,20 +72,18 @@ function DashboardMock() {
             {steps.map((step) => (
               <div
                 key={step.label}
-                className={`flex flex-col items-center gap-2 rounded-[var(--radius-btn)] border px-2 py-3 text-center ${
-                  step.state === "active"
+                className={`flex flex-col items-center gap-2 rounded-[var(--radius-btn)] border px-2 py-3 text-center ${step.state === "active"
                     ? "border-[var(--color-teal)]/40 bg-white shadow-[var(--shadow-card)]"
                     : "border-[var(--color-border)] bg-white"
-                }`}
+                  }`}
               >
                 <span
-                  className={`flex h-8 w-8 items-center justify-center rounded-full ${
-                    step.state === "done"
+                  className={`flex h-8 w-8 items-center justify-center rounded-full ${step.state === "done"
                       ? "bg-[var(--color-accent)]/15 text-[var(--color-accent)]"
                       : step.state === "active"
                         ? "bg-[var(--color-teal)] text-white"
                         : "bg-slate-100 text-[var(--color-muted)]"
-                  }`}
+                    }`}
                 >
                   {step.state === "done" ? (
                     <CheckCircle2 className="h-4 w-4" />
@@ -94,9 +92,8 @@ function DashboardMock() {
                   )}
                 </span>
                 <span
-                  className={`text-[10px] font-semibold leading-none sm:text-[11px] ${
-                    step.state === "pending" ? "text-[var(--color-muted)]" : "text-[var(--color-navy)]"
-                  }`}
+                  className={`text-[10px] font-semibold leading-none sm:text-[11px] ${step.state === "pending" ? "text-[var(--color-muted)]" : "text-[var(--color-navy)]"
+                    }`}
                 >
                   {step.label}
                 </span>

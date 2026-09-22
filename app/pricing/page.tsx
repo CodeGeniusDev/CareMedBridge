@@ -237,7 +237,7 @@ export default function PricingPage() {
                 className={cn(
                   "card-base p-8 flex flex-col gap-6 relative",
                   plan.featured &&
-                    "border-[var(--color-teal)] shadow-[var(--shadow-card-hover)] ring-1 ring-[var(--color-teal)]/30"
+                  "border-[var(--color-teal)] shadow-[var(--shadow-card-hover)] ring-1 ring-[var(--color-teal)]/30"
                 )}
               >
                 {plan.featured && (
